@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".EnterIncome">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/green"
+        android:text="Add a new Income entry" />
+
+    <LinearLayout
+
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="Enter Amount: " />
+
+        <EditText
+            android:id="@+id/incomeamt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="0.0"
+            android:textAlignment="center"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="@color/darkblue"
+        android:text="Select Source: "
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_incomeGroup"
+        android:layout_width="243dp"
+        android:layout_height="250dp">
+
+        <RadioButton
+            android:id="@+id/radioSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salary" />
+
+        <RadioButton
+            android:id="@+id/radioGains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Business Gains" />
+
+        <RadioButton
+            android:id="@+id/radioInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Interest/Dividends" />
+
+        <RadioButton
+            android:id="@+id/radioPocket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Pocketmoney" />
+        <RadioButton
+            android:id="@+id/radioRental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Rental income" />
+
+        <RadioButton
+            android:id="@+id/radioAids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Scholarship/Aids" />
+
+        <RadioButton
+            android:id="@+id/radioOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:clickable="true"
+            android:text="Other" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_IncomeAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blueLight"
+        android:clickable="true"
+        android:text="Enter" />
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
